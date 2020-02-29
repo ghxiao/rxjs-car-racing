@@ -1,0 +1,34 @@
+<style>
+	.road {
+    width: 100px;
+		height: 180px;
+    margin-top: 25px;
+    overflow: hidden;
+		position: absolute;
+	}
+
+	.dotted {
+		margin-top: -100px;
+		height: 300px;
+		border-left: 2px dashed lightgray;
+		position: absolute;
+		animation: road-moving 1s infinite linear;
+	}
+
+	@keyframes road-moving {
+		100% {
+			transform: translateY(100px);
+		}
+	}
+</style>
+
+<div class="road">
+	<div class="dotted" style="margin-left: 0px;"></div>
+	<div class="dotted" style="margin-left: 9px;"></div>
+	<div class="dotted" style="margin-left: 18px;"></div>
+	<div class="dotted" style="margin-left: 27px;"></div>
+	<div class="dotted" style="margin-left: 36px;"></div>
+	<div class="dotted" style="margin-left: 45px;"></div>
+	<div class="dotted" style="margin-left: 54px;"></div>
+</div>
+<div id="game"></div>
